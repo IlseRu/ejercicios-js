@@ -3,6 +3,19 @@ const ejercicio1 = [
   19, 88, 456, 13, 23, 24,
 ];
 
+function esPrimo(ejercicio1){
+  console.log("((((EJERCICIO 1))))");
+
+    for (let i = 0; i < ejercicio1.length; i++) {
+      let valor= ejercicio1[i];
+      if (valor % 2  === 1 ) {
+        console.log(`${valor} es un numero primo`);
+      }      
+    }
+};
+
+esPrimo(ejercicio1);
+
 const ejercicio2 = [
   {
     nombre: "Gabriel",
@@ -35,3 +48,21 @@ const ejercicio2 = [
     esFamiliar: true,
   },
 ];
+console.log("  ");
+
+console.log("((((EJERCICIO 2))))");
+
+function accesoFiesta(invitado){
+
+  if (invitado.edad >= 18 && invitado.esFamiliar=== true) {
+    console.log(`Hola ${invitado.nombre}, bienvenido a la fiesta.`);
+  }
+}
+
+ejercicio2.forEach(element => {
+  console.log(accesoFiesta(element));
+});
+
+console.log("  ");
+
+console.log("((((EJERCICIO 3 - SERIE FIBONACCI))))");
