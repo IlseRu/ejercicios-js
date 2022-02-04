@@ -65,4 +65,16 @@ ejercicio2.forEach(element => {
 
 console.log("  ");
 
-console.log("((((EJERCICIO 3 - SERIE FIBONACCI))))");
+console.log("((((EJERCICIO 3 - SERIE FIBONACCI  ))))");
+
+let  numero1= 0, numero2=1, suma=1;
+console.log(suma);
+for (let index = 1; index < 50; index++) {
+    
+  suma =numero1+numero2;
+  numero1 = numero2;
+  numero2= suma;
+
+  console.log(suma);
+
+} 
